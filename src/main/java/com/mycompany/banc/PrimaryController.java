@@ -3,11 +3,20 @@ package com.mycompany.banc;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 public class PrimaryController {
+
+    private static void launch() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     @FXML
     TextField user;
@@ -53,6 +62,8 @@ public class PrimaryController {
         if (intents>3) {
             missatge.setText("Bloquejat,només tens 3 intents");
         }
+        
+       
        
             
         }
