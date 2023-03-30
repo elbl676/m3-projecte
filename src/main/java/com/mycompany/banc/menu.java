@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class SecondaryController11 {
+public class menu {
      @FXML
  private Button logout;
  @FXML
@@ -27,6 +27,13 @@ public class SecondaryController11 {
  
    @FXML
 private Button saldoButton;
+   
+   
+    @FXML
+    private void switchToSaldo() throws IOException {
+        App.setRoot("secondary");
+    }
+ 
 
 
   

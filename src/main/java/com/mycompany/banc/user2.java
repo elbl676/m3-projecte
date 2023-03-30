@@ -13,7 +13,7 @@ import javafx.scene.control.Button;
  * @author alumne
  */
 
-public class secondary {
+public class user2 {
  @FXML
  private Button logout;
  @FXML
@@ -26,11 +26,14 @@ public class secondary {
   private Button transferencia;
  @FXML
   private Button clau;
+ 
+    
+ 
  @FXML
-    private void switchToPrimary() throws IOException {
+    private void switchToLogin() throws IOException {
         App.setRoot("primary");
     }
-
+ 
 
 
 
