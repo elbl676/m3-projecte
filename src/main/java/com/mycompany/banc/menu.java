@@ -33,8 +33,16 @@ private Button saldoButton;
     private void switchToSaldo() throws IOException {
         App.setRoot("secondary");
     }
+    
+     @FXML
+    private void switchTologout() throws IOException {
+        App.setRoot("primary");
+    }
  
-
+ @FXML
+    private void switchToclau() throws IOException {
+        App.setRoot("clau");
+    }
 
   
 
