@@ -3,12 +3,12 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="622.0" styleClass="imatge1" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.menu">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="622.0" styleClass="imatge1" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.menu">
    <children>
       <Button layoutX="158.0" layoutY="232.0" mnemonicParsing="false" onAction="#switchToSaldo" text="Saldo client" />
-      <Button layoutX="151.0" layoutY="268.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="108.0" text="Retirar diners" />
-      <Button layoutX="260.0" layoutY="193.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="121.0" text="Ingresar diners" />
-      <Button layoutX="263.0" layoutY="232.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="114.0" text="Transferncia" />
+      <Button layoutX="151.0" layoutY="268.0" mnemonicParsing="false" onAction="#switchToextreure" prefHeight="24.0" prefWidth="108.0" text="Retirar diners" />
+      <Button layoutX="260.0" layoutY="193.0" mnemonicParsing="false" onAction="#switchtoingres" prefHeight="24.0" prefWidth="121.0" text="Ingresar diners" />
+      <Button layoutX="263.0" layoutY="232.0" mnemonicParsing="false" onAction="#transferencia" prefHeight="24.0" prefWidth="114.0" text="Transferncia" />
       <Button layoutX="155.0" layoutY="193.0" mnemonicParsing="false" onAction="#switchToclau" prefHeight="24.0" prefWidth="100.0" text="Canviar clau" />
       <Button layoutX="270.0" layoutY="268.0" mnemonicParsing="false" onAction="#switchTologout" prefHeight="24.0" prefWidth="100.0" text="Logout" />
    </children>

@@ -14,6 +14,8 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    
+    static Banc banc = new Banc();
 
     @Override
     public void start(Stage stage) throws IOException {

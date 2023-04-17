@@ -43,6 +43,19 @@ private Button saldoButton;
     private void switchToclau() throws IOException {
         App.setRoot("clau");
     }
+    @FXML
+    private void switchtoingres() throws IOException {
+        App.setRoot("ingres");
+    }
+    @FXML
+    private void switchToextreure() throws IOException {
+        App.setRoot("retirar");
+    }
+     @FXML
+    private void transferencia() throws IOException {
+        App.setRoot("transferencia");
+    }
+
 
   
 

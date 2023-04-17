@@ -23,6 +23,7 @@
          </children>
       </AnchorPane>
         <Label text="Clients View" />
+      <Button mnemonicParsing="false" onAction="#escull" text="comptes" />
         <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Switch to Primary View" />
     </children>
     <padding>
