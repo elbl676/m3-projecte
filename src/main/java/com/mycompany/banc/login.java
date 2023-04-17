@@ -36,43 +36,36 @@ public class login {
 
     @FXML
     public void login() throws IOException {
-        
+       ArrayList<Usuario> usuarios = App.banc.getUsuarios(); 
         
 
         System.out.println("Usuari:");
 
         System.out.println("Password:");
- ArrayList<Usuario> usuarios = App.banc.getUsuarios();
-        if (user.getText().equals(Username) && password.getText().equals(contrasenya)) {
-              App.setRoot("secondry1");
-        } else {
-            System.out.println("Torna-ho a provar");
-
-        }
-
-        if (intents > 3) {
-            System.out.println("Bloquejat,només tens 3 intents");
-        }
-        intents++;
-        if (user.getText().equals(Username) && password.getText().equals(contrasenya)) {
-            missatge.setText("login correcte");
-        } 
-        else {
- missatge.setText("Torna-ho a intentar");
  
-        }
-        if (intents>3) {
-            missatge.setText("Bloquejat,només tens 3 intents");
-        }
-        
-       
-    
-   
+  for (Usuario u : usuarios) {
+    if (user.getText().equals(u.getUsername()) && password.getText().equals(u.getPassword())) {
+        App.setRoot("secondry1");
+    } else {
+        System.out.println("Torna-ho a provar");
+    }
 
-    
-    
+    if (intents > 3) {
+        System.out.println("Bloquejat, només tens 3 intents");
+    }
+    intents++;
+    if (user.getText().equals(u.getUsername()) && password.getText().equals(u.getPassword())) {
+        missatge.setText("login correcte");
+    } else {
+        missatge.setText("Torna-ho a intentar");
+    }
+    if (intents > 3) {
+        missatge.setText("Bloquejat, només tens 3 intents");
+    }
 }
+    }
 }
+
 
  
 

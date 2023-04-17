@@ -22,6 +22,7 @@ public class Banc {
         usuarios.add(new Usuario("user2", "contraseña2"));
         usuarios.add(new Usuario("user3", "contraseña3"));
         usuarios.add(new Usuario("user4", "contraseña4"));
+        usuarios.add(new Usuario("eloy", "banc"));
         
     }
 
