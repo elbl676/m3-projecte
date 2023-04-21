@@ -4,9 +4,14 @@
  */
 package com.mycompany.banc;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+
+
+import java.util.ArrayList;
 
 
 /**
@@ -15,9 +20,15 @@ import java.util.ArrayList;
  */
 public class usuaris {
 
-    static void add(Usuario usuario) {
+    public usuaris(String usuario, String contrasenya) {
+    }
+
+    private boolean getNombre() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+
+   
 
    public class Usuario {
     private String username;
@@ -55,7 +66,28 @@ public class usuaris {
     }
 
     // Métodos getters y setters
+    
+    private String usuario;
+    private String contrasenya;
+     private ArrayList<usuaris> listaUsuarios = new ArrayList<>();
+     public void agregarUsuario(String usuario, String contrasenya) {
+    usuaris usuari = new usuaris(usuario, contrasenya);
+    listaUsuarios.add(usuari);
+     for (usuaris usuaris : listaUsuarios) {
+    System.out.println(usuari.getNombre());
 }
+}
+
+            public String getUsuario() {
+                return usuario;
+            }
+
+    
+    
+
+    
+}
+    }
 
 }
 
@@ -64,7 +96,7 @@ public class usuaris {
 }
 
     }
-}
+
     
 
 
@@ -81,5 +113,6 @@ public class usuaris {
 
     
 
+    
 
 

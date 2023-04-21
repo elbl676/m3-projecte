@@ -32,8 +32,11 @@ public class IngresarDineroConBilletes {
    public ComboBox quantitat100;
       @FXML
       public TextField total;
+
       @FXML
       public TextField total1;
+
+
      
     
 public void depositar(ActionEvent event) {
@@ -45,17 +48,17 @@ public void depositar(ActionEvent event) {
 
     double cantidadTotal = iquantitat20 * 20.0+ iquantitat50 * 50 + iquantitat100 * 100;
      double saldoActual = cantidadTotal;
+
      double saldo=saldoActual-cantidadTotal;
 
      total.setText("Enhoraba has ingresat: €" + saldoActual);
+    
 }
     
 
-   
 
-       
-    
-    @FXML
+     
+     @FXML
     void initialize() {
         
        quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
@@ -68,6 +71,13 @@ public void depositar(ActionEvent event) {
     private void switchToingres() throws IOException {
         App.setRoot("secondry1");
     }
+}
+
+
+   
+
+       
+    
+    
     
 
-}

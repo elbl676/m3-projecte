@@ -20,9 +20,7 @@ public class menu {
   private Button retirar;
  @FXML
   private Button ingresar;
- @FXML
-  private Button transferencia;
- @FXML
+  @FXML
   private Button clau;
  
    @FXML
@@ -40,7 +38,7 @@ private Button saldoButton;
     }
  
  @FXML
-    private void switchToclau() throws IOException {
+       private void switchToclau() throws IOException {
         App.setRoot("clau");
     }
     @FXML
@@ -48,24 +46,14 @@ private Button saldoButton;
         App.setRoot("ingres");
     }
     @FXML
-    private void switchToextreure() throws IOException {
+    private void extreu() throws IOException {
         App.setRoot("retirar");
     }
-     @FXML
-    private void transferencia() throws IOException {
+    
+    @FXML
+    private void transfer() throws IOException {
         App.setRoot("transferencia");
     }
-
-
-  
-
-
-
-
-
-
-
- 
 
 
 @FXML

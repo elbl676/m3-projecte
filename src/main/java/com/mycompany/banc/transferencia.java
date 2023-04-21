@@ -12,9 +12,10 @@ import javafx.fxml.FXML;
  * @author jjavi
  */
 public class transferencia {
-   @FXML
+   
+    @FXML
     private void transferir() throws IOException {
-        App.setRoot("res_transferencia");
+        App.setRoot("secondry1");
     }
  
     
