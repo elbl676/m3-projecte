@@ -20,11 +20,11 @@ public class Banc {
 
     public Banc() {
         usuarios = new ArrayList();
-        usuarios.add(new Usuario("user1", "contraseña1", "Joan", "García Fernàndez","54080799W","EL9234013865102654781208"));
-        usuarios.add(new Usuario("user2", "contraseña2", "Marc", "Gómez Martínez","46783456F","ES4520858343195898054937"));
-        usuarios.add(new Usuario("user3", "contraseña3", "Jordi", "Verges Jimenez","54783457D","ES7502391215116358414766"));
-        usuarios.add(new Usuario("user4", "contraseña4", "Alicia", "Marquez Sanchez","46783456G","ES4100119674480891876465"));
-        usuarios.add(new Usuario("eloy", "banc", "Eloy", "Blasco Tortajada","54080799W","EL92340138651026547"));
+        usuarios.add(new Usuario("user1", "contraseña1", "Joan", "García Fernàndez","54080799W","EL9234013865102654781208","4202728412227757",3500));
+        usuarios.add(new Usuario("user2", "contraseña2", "Marc", "Gómez Martínez","46783456F","ES4520858343195898054937", "4046021858846672", 2700));
+        usuarios.add(new Usuario("user3", "contraseña3", "Jordi", "Verges Jimenez","54783457D","ES7502391215116358414766", "4120606673765815", 3040));
+        usuarios.add(new Usuario("user4", "contraseña4", "Alicia", "Marquez Sanchez","46783456G","ES4100119674480891876465", "4200832023470665", 2670));
+        usuarios.add(new Usuario("eloy", "banc", "Eloy", "Blasco Tortajada","54080799W","EL92340138651026547", "4388585760455711", 3800));
         
     }
 

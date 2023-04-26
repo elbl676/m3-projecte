@@ -11,15 +11,19 @@ public class Usuario {
     private String cognoms_client;
     private String DNI_client;
     private String Nº_compteclient;
+     private String Nº_tarjeta;
+     private double saldo;
     
 
-    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient) {
+    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient, String nº_Tarjetaclient, int Saldo_client) {
         this.username = username;
         this.password = password;
          this.DNI_client=dni_client;
         this.Nom_client=nom_client;
         this.Nº_compteclient=nº_compteclient;
         this.cognoms_client=cognoms_client;
+        this.Nº_tarjeta=nº_Tarjetaclient;
+       this.saldo=Saldo_client;
     }
 
     public String getNom_client() {
@@ -68,6 +72,22 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getNº_tarjeta() {
+        return Nº_tarjeta;
+    }
+
+    public void setNº_tarjeta(String Nº_tarjeta) {
+        this.Nº_tarjeta = Nº_tarjeta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     

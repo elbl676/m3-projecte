@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.transferencia">
+   <children>
+      <VBox alignment="CENTER" layoutX="366.0" layoutY="200.0" spacing="20.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="mensaje" layoutX="41.0" layoutY="59.0" text="Quantitat a transferir:" />
+      <TextField layoutX="222.0" layoutY="55.0" />
+      <Label layoutX="50.0" layoutY="112.0" text="Persona a qui vols fer la transferencia" />
+      <TextField fx:id="cuentaDestino" layoutX="256.0" layoutY="108.0" />
+      <Button fx:id="transferirButton" layoutX="50.0" layoutY="150.0" onAction="#transferir" text="Transferir" />
+   </children>
+</AnchorPane>

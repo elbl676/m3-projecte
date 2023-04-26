@@ -16,7 +16,7 @@ public class App extends Application {
     private static Scene scene;
     
     static Banc banc = new Banc();
-    static com.mycompany.banc.clients clients = new clients("nom", "cognoms", "er", "fvhe");
+    static com.mycompany.banc.clients clients = new clients("nom", "cognoms", "er", "Nº_compte","Nº_Tarjeta");
 
     @Override
     public void start(Stage stage) throws IOException {

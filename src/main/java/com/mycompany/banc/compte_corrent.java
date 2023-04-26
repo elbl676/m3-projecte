@@ -17,26 +17,30 @@ import javafx.scene.control.TextField;
 public class compte_corrent {
     
     @FXML
-    private TextField nom_client;
+    private TextField Nom;
     @FXML
-     private TextField cognoms_client;
+     private TextField Cognoms;
     @FXML
-      private TextField DNI_client;
+      private TextField DNI;
     @FXML
-       private TextField num_compte_client;
+       private TextField nºtarjeta;
+    @FXML
+       private TextField nºcompte;
      @FXML
     void initialize() {
         Usuario u = App.banc.getUsuariActual();
         u.getPassword();
         u.getUsername();
-        nom_client.setText(u.getNom_client());
-        cognoms_client.setText(u.getCognoms_client());
-        DNI_client.setText(u.getDNI_client());
-        num_compte_client.setText(u.getNº_compteclient());
+        Nom.setText(u.getNom_client());
+        Cognoms.setText(u.getCognoms_client());
+        DNI.setText(u.getDNI_client());
+        nºtarjeta.setText(u.getNº_tarjeta());
+        nºcompte.setText(u.getNº_compteclient());
         u.getCognoms_client();
         u.getDNI_client();
         u.getNº_compteclient();
         u.getNom_client();
+        u.getNº_tarjeta();
     }
     
    @FXML
