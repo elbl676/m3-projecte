@@ -16,14 +16,14 @@
       <TextField fx:id="txt100" prefHeight="25.0" prefWidth="192.0" text="Bitllets de 100€" GridPane.columnIndex="2" GridPane.rowIndex="24" />
       <TextField fx:id="txt20" prefHeight="16.0" prefWidth="300.0" text="Bitllets de 20€" GridPane.columnIndex="2" GridPane.rowIndex="8" />
       <TextField fx:id="txt50" prefHeight="25.0" prefWidth="126.0" text="Bitllets de 50€" GridPane.columnIndex="2" GridPane.rowIndex="15" />
-      <Button fx:id="Depositar" mnemonicParsing="false" text="Extreu" GridPane.columnIndex="15" GridPane.rowIndex="25" />
+      <Button fx:id="Depositar" mnemonicParsing="false" onAction="#depositar" text="Extreu" GridPane.columnIndex="15" GridPane.rowIndex="25" />
       <Button fx:id="ingres" mnemonicParsing="false" onAction="#switchToingres" text="Menu" GridPane.columnIndex="15" GridPane.rowIndex="26" />
       <ComboBox fx:id="quantitat20" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="8" />
       <ComboBox fx:id="quantitat50" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="15" />
       <ComboBox fx:id="quantitat100" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="24" />
       <TextField fx:id="total" GridPane.columnIndex="2" GridPane.rowIndex="26" />
       <Label text="Saldo actual: " GridPane.rowIndex="1" />
-      <TextField fx:id="total1" text="3500€" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="total1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Button fx:id="saldo" mnemonicParsing="false" text="saldo" GridPane.columnIndex="15" GridPane.rowIndex="1" />
        
       

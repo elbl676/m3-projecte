@@ -2,9 +2,13 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.transferencia">
@@ -14,10 +18,70 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
       </VBox>
-      <Label fx:id="mensaje" layoutX="41.0" layoutY="59.0" text="Quantitat a transferir:" />
-      <TextField layoutX="222.0" layoutY="55.0" />
-      <Label layoutX="50.0" layoutY="112.0" text="Persona a qui vols fer la transferencia" />
-      <TextField fx:id="cuentaDestino" layoutX="256.0" layoutY="108.0" />
-      <Button fx:id="transferirButton" layoutX="50.0" layoutY="150.0" onAction="#transferir" text="Transferir" />
+      <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="120.0" text="Quantittat a extreure:" GridPane.rowIndex="26" />
+            <TextField fx:id="txt100" prefHeight="25.0" prefWidth="192.0" text="Bitllets de 100€" GridPane.columnIndex="2" GridPane.rowIndex="24" />
+            <TextField fx:id="txt20" prefHeight="16.0" prefWidth="300.0" text="Bitllets de 20€" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TextField fx:id="txt50" prefHeight="25.0" prefWidth="126.0" text="Bitllets de 50€" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <Button fx:id="Depositar" mnemonicParsing="false" onAction="#depositar" text="Extreu" GridPane.columnIndex="15" GridPane.rowIndex="25" />
+            <Button fx:id="ingres" mnemonicParsing="false" onAction="#transferir" text="Menu" GridPane.columnIndex="15" GridPane.rowIndex="26" />
+            <ComboBox fx:id="quantitat20" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+            <ComboBox fx:id="quantitat50" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="15" />
+            <ComboBox fx:id="quantitat100" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="24" />
+            <TextField fx:id="total" GridPane.columnIndex="2" GridPane.rowIndex="26" />
+            <Label text="Saldo actual: " GridPane.rowIndex="1" />
+            <TextField fx:id="total1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="saldo" mnemonicParsing="false" text="saldo" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
    </children>
 </AnchorPane>

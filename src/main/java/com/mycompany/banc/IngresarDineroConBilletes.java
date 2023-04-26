@@ -38,8 +38,7 @@ public class IngresarDineroConBilletes {
       @FXML
     private TextField saldo;
 
-@FXML
-    private TextField saldo1;
+
 
 double saldoActual;
  
@@ -58,19 +57,14 @@ public void depositar(ActionEvent event) {
      double Saldo=saldoActual-cantidadTotal;
 
      total.setText("Enhoraba has ingresat: €" + saldoActual);
-     
-}
-
-public void ingres(ActionEvent event) {
-    
-
-   
-    double Saldo_client=App.banc.getUsuariActual().getSaldo();
+     double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
    
 double saldo_Final=Saldo_client+saldoActual;  
- saldo1.setText("Enhorabona el teu saldo es: €" + saldo_Final);
+ saldo.setText(" €" + saldo_Final);
 }
+
+
 
 
      @FXML

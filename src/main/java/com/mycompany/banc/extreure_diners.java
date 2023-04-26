@@ -37,10 +37,13 @@ public class extreure_diners {
    public ComboBox quantitat100;
       @FXML
       public TextField total;
-    
+       @FXML
+      public TextField total1;
+    @FXML
+   public Button depositar;
 
 
-
+double saldoActual;
   
      
     
@@ -57,6 +60,11 @@ public void depositar(ActionEvent event) {
      double saldoT=saldo-saldoActual;
 
      total.setText("Enhoraba has ingresat: €" + saldoActual);
+      double Saldo_client=App.banc.getUsuariActual().getSaldo();
+
+   
+double saldo_Final=Saldo_client-saldoActual;  
+ total1.setText(" €" + saldo_Final);
      
 }
 public void saldo(ActionEvent event) {
@@ -67,7 +75,7 @@ public void saldo(ActionEvent event) {
    
 
     double cantidadTotal = iquantitat20 * 20.0+ iquantitat50 * 50 + iquantitat100 * 100;
-     double saldoActual = cantidadTotal;
+      saldoActual = cantidadTotal;
      double saldo=3500;
      double saldoT=saldo-saldoActual;
 
@@ -84,8 +92,14 @@ public void saldo(ActionEvent event) {
        quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
         quantitat50.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
          quantitat100.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
+         
+         Usuario u = App.banc.getUsuariActual();
+        u.getPassword();
+        u.getUsername();
+        total1.setText(String.valueOf(u.getSaldo()));
     }
 
+   
     
     @FXML
     private void switchToingres() throws IOException {

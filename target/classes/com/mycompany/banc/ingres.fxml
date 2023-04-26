@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.IngresarDineroConBilletes">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.IngresarDineroConBilletes">
  
   
    <children>
@@ -25,8 +25,6 @@
       <TextField fx:id="total" prefHeight="24.0" prefWidth="313.0" GridPane.columnIndex="2" GridPane.rowIndex="25" />
       <Label fx:id="lblSaldo1" prefHeight="16.0" prefWidth="149.0" text="Sou actual" />
       <TextField fx:id="saldo" prefHeight="24.0" prefWidth="147.0" GridPane.columnIndex="2" />
-      <Button fx:id="Depositar1" mnemonicParsing="false" onAction="#ingres" prefHeight="24.0" prefWidth="126.0" text="ingresar" GridPane.columnIndex="15" GridPane.rowIndex="25" />
-      <TextField fx:id="saldo1" prefHeight="24.0" prefWidth="147.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
        
       
    </children>
