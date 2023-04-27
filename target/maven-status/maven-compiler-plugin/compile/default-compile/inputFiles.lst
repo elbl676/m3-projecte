@@ -1,26 +1,27 @@
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/compte_Estalvis.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/comptes.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/user1.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/dades_client.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/usuaris.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/menu.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/transferencia.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/Usuario.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/clients.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/clau.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/module-info.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/PrimaryController.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/items.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/IngresarDineroConBilletes.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/login.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/App.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/extreure_diners.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/res_transferencia.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/nom.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/dades_clients.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/user2.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/loginButton.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/Banc.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/compte_corrent.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/Client.java
-/home/alumne/Baixades/m3-projecte-main(3) (1)/m3-projecte-main/src/main/java/com/mycompany/banc/SecondaryController.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\user1.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\module-info.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\usuaris.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\dades_clients.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\SecondaryController.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\compte_corrent.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\nom.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\transferencia.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\PrimaryController.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\user2.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\comptes.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\Banc.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\Client.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\Usuario.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\clients.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\dades_client.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\clau.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\login.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\res_transferencia.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\IngresarDineroConBilletes.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\prestec.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\compte_Estalvis.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\App.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\extreure_diners.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\items.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\finalitzar_prestec.java
+C:\Users\jjavi\Downloads\m3-projecte-main\src\main\java\com\mycompany\banc\menu.java

@@ -1,31 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.banc;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import javafx.collections.ObservableList;
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
-/**
- *
- * @author jjavi
- */
-public class transferencia {
-    
-    
-    double saldoActual;
- 
-    @FXML
+
+
+
+public class prestec {
+   @FXML
    public Button Depositar;
     @FXML
    public Button ingres;
@@ -36,16 +30,25 @@ public class transferencia {
    public ComboBox quantitat50;
       @FXML
    public ComboBox quantitat100;
-       @FXML
-   public ComboBox transferir;
       @FXML
       public TextField total;
-       @FXML
+
+      @FXML
       public TextField total1;
-    @FXML
-   public Button depositar;
-     @FXML
-   public Button saldo;
+      @FXML
+    private TextField saldo;
+
+
+
+double saldoActual;
+
+     
+    
+
+
+
+
+ 
      
     
 public void depositar(ActionEvent event) {
@@ -60,12 +63,11 @@ public void depositar(ActionEvent event) {
 
      double Saldo=saldoActual-cantidadTotal;
 
-     total.setText("Enhoraba has realitzat la transferencia de: €" + saldoActual);
+     total.setText("Enhoraba has rebut un prestec de: €" + saldoActual);
      double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
    
-double saldo_Final=Saldo_client+saldoActual;  
- total1.setText(" €" + saldo_Final);
+
 }
 
 
@@ -73,40 +75,40 @@ double saldo_Final=Saldo_client+saldoActual;
 
      @FXML
     void initialize() {
-         Usuario u = App.banc.getUsuariActual();
+        
        quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
         quantitat50.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
          quantitat100.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
+         
+
         
-       
-    total1.setText(String.valueOf(u.getSaldo()));
-
-    //VBox vbox = new VBox();
-    transferir.getItems().addAll(App.banc.getUsuarios());  
-    for (Usuario usuario : App.banc.getUsuarios()) {
-      
-       
-
-    
+        
     }
+    
+    
+         @FXML
+    private void switchToingres() throws IOException {
+        App.setRoot("secondry1");
     }
-   @FXML
-private void transferir() throws IOException {
-   App.setRoot("res_transferencia");
-}
     
-@FXML
-private void menu() throws IOException {
-    App.setRoot("secondry1");
-}
-}
+     @FXML
+    private void confirmar() throws IOException {
+        App.setRoot("finalitzar");
+    }
+        
+    }
+
+   
+    
+   
 
 
- 
- 
 
-  
- 
+
+   
+
+       
+    
+    
     
 
- 

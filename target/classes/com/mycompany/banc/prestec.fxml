@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.prestec">
+ 
+  
+   <children>
+      <Label prefHeight="16.0" prefWidth="263.0" text="Prestec demanat:" GridPane.rowIndex="25" />
+      <TextField fx:id="txt100" prefHeight="25.0" prefWidth="171.0" text="Bitllets de 100€" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+      <TextField fx:id="txt20" prefHeight="24.0" prefWidth="146.0" text="Bitllets de 20€" GridPane.columnIndex="15" />
+      <TextField fx:id="txt50" prefHeight="25.0" prefWidth="126.0" text="Bitllets de 50€" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+      <Button fx:id="Depositar" mnemonicParsing="false" onAction="#depositar" prefHeight="24.0" prefWidth="83.0" text="Depositar" GridPane.columnIndex="16" GridPane.rowIndex="16" />
+      <Button fx:id="ingres" mnemonicParsing="false" onAction="#switchToingres" text="Menu" GridPane.columnIndex="15" GridPane.rowIndex="16" />
+      <ComboBox fx:id="quantitat20" onAction="#depositar" prefHeight="24.0" prefWidth="144.0" GridPane.columnIndex="16" />
+      <ComboBox fx:id="quantitat50" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+      <ComboBox fx:id="quantitat100" onAction="#depositar" prefHeight="24.0" prefWidth="114.0" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+      <TextField fx:id="total" prefHeight="24.0" prefWidth="313.0" GridPane.columnIndex="2" GridPane.rowIndex="25" />
+      <Button fx:id="finalitzar" mnemonicParsing="false" onAction="#confirmar" prefHeight="24.0" prefWidth="83.0" text="Finalitzar" GridPane.columnIndex="15" GridPane.rowIndex="25" />
+       
+      
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="265.0" minWidth="265.0" prefWidth="265.0" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

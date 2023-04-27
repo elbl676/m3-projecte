@@ -39,5 +39,9 @@ public class dades_client {
     private void escull() throws IOException {
         App.setRoot("comptes");
     }
+     @FXML
+    private void prestamo() throws IOException {
+        App.setRoot("prestec");
+    }
 }
  
