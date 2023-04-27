@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.extreure_diners">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.extreure_diners">
  
   
    <children>
-      <Label prefHeight="17.0" prefWidth="120.0" text="Quantittat a extreure:" GridPane.rowIndex="26" />
+      <Label prefHeight="17.0" prefWidth="149.0" text="Quantittat a extreure:" GridPane.rowIndex="26" />
       <TextField fx:id="txt100" prefHeight="25.0" prefWidth="192.0" text="Bitllets de 100€" GridPane.columnIndex="2" GridPane.rowIndex="24" />
       <TextField fx:id="txt20" prefHeight="16.0" prefWidth="300.0" text="Bitllets de 20€" GridPane.columnIndex="2" GridPane.rowIndex="8" />
       <TextField fx:id="txt50" prefHeight="25.0" prefWidth="126.0" text="Bitllets de 50€" GridPane.columnIndex="2" GridPane.rowIndex="15" />

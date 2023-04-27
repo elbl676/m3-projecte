@@ -5,6 +5,7 @@
 package com.mycompany.banc;
 
 import java.io.IOException;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -27,6 +28,9 @@ public class compte_corrent {
     @FXML
        private TextField nºcompte;
      @FXML
+       private TextField total1;
+    double saldoActual;
+     @FXML
     void initialize() {
         Usuario u = App.banc.getUsuariActual();
         u.getPassword();
@@ -41,8 +45,24 @@ public class compte_corrent {
         u.getNº_compteclient();
         u.getNom_client();
         u.getNº_tarjeta();
+         
+        u.getPassword();
+        u.getUsername();
+        total1.setText(String.valueOf(u.getSaldo()));
+
+        
+        u.getSaldo(); 
     }
     
+    public void sou(ActionEvent event) {
+     double Saldo_client=App.banc.getUsuariActual().getSaldo();
+
+   
+double saldo_Final=Saldo_client+saldoActual;  
+ total1.setText(" €" + saldo_Final);
+   }
+    
+  
    @FXML
     private void menu() throws IOException {
         App.setRoot("secondry1");

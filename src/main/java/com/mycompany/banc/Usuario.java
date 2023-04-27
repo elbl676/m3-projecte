@@ -90,6 +90,13 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    @Override
+    public String toString() {
+        return Nº_compteclient ;
+    }
+    
+    
+
     
 
    

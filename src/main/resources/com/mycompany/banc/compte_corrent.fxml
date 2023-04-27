@@ -20,5 +20,8 @@
       <Label fx:id="compte" layoutX="47.0" layoutY="220.0" prefHeight="16.0" prefWidth="80.0" text="Nº Compte" />
       <TextField fx:id="nºcompte" layoutX="135.0" layoutY="216.0" prefHeight="25.0" prefWidth="214.0" text="EL9234013865102654781208" />
       <Button layoutX="55.0" layoutY="345.0" mnemonicParsing="false" onAction="#menu" text="Menu" />
+      <Label layoutX="291.0" layoutY="20.0" text="Saldo actual: " />
+      <TextField fx:id="total1" layoutX="399.0" layoutY="16.0" />
+      <Button fx:id="sou" layoutX="405.0" layoutY="216.0" mnemonicParsing="false" text="sou" />
    </children>
 </AnchorPane>

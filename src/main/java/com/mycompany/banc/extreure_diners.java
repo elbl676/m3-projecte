@@ -59,7 +59,7 @@ public void depositar(ActionEvent event) {
      double saldo=3500;
      double saldoT=saldo-saldoActual;
 
-     total.setText("Enhoraba has ingresat: €" + saldoActual);
+     total.setText("Enhoraba has extret: €" + saldoActual);
       double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
    
@@ -79,7 +79,7 @@ public void saldo(ActionEvent event) {
      double saldo=3500;
      double saldoT=saldo-saldoActual;
 
-     total.setText("Enhoraba has ingresat: €" + saldoT);
+     total.setText("Enhoraba has extret: €" + saldoT);
      
 }
    

@@ -11,21 +11,21 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.transferencia">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="673.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.transferencia">
    <children>
       <VBox alignment="CENTER" layoutX="366.0" layoutY="200.0" spacing="20.0">
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
       </VBox>
-      <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <GridPane layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="651.0">
          <children>
-            <Label prefHeight="17.0" prefWidth="120.0" text="Quantittat a extreure:" GridPane.rowIndex="26" />
+            <Label prefHeight="17.0" prefWidth="152.0" text="A qui vols Transferir:" GridPane.rowIndex="33" />
             <TextField fx:id="txt100" prefHeight="25.0" prefWidth="192.0" text="Bitllets de 100€" GridPane.columnIndex="2" GridPane.rowIndex="24" />
             <TextField fx:id="txt20" prefHeight="16.0" prefWidth="300.0" text="Bitllets de 20€" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <TextField fx:id="txt50" prefHeight="25.0" prefWidth="126.0" text="Bitllets de 50€" GridPane.columnIndex="2" GridPane.rowIndex="15" />
             <Button fx:id="Depositar" mnemonicParsing="false" onAction="#depositar" text="Extreu" GridPane.columnIndex="15" GridPane.rowIndex="25" />
-            <Button fx:id="ingres" mnemonicParsing="false" onAction="#transferir" text="Menu" GridPane.columnIndex="15" GridPane.rowIndex="26" />
+            <Button fx:id="ingres" mnemonicParsing="false" onAction="#transferir" text="Menu" GridPane.columnIndex="2" GridPane.rowIndex="34" />
             <ComboBox fx:id="quantitat20" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="8" />
             <ComboBox fx:id="quantitat50" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="15" />
             <ComboBox fx:id="quantitat100" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="15" GridPane.rowIndex="24" />
@@ -33,6 +33,9 @@
             <Label text="Saldo actual: " GridPane.rowIndex="1" />
             <TextField fx:id="total1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="saldo" mnemonicParsing="false" text="saldo" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="152.0" text="Quantittat a transferir:" GridPane.rowIndex="26" />
+            <ComboBox fx:id="transferir" onAction="#depositar" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="33" />
+            <Button fx:id="transfereix" mnemonicParsing="false" onAction="#transferir" text="Transferir" GridPane.columnIndex="15" GridPane.rowIndex="33" />
          </children>
          <columnConstraints>
             <ColumnConstraints />
@@ -53,6 +56,13 @@
             <ColumnConstraints />
          </columnConstraints>
          <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
             <RowConstraints />
             <RowConstraints />
             <RowConstraints />

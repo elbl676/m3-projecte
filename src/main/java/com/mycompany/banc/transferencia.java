@@ -5,11 +5,16 @@
 package com.mycompany.banc;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 
 /**
  *
@@ -31,6 +36,8 @@ public class transferencia {
    public ComboBox quantitat50;
       @FXML
    public ComboBox quantitat100;
+       @FXML
+   public ComboBox transferir;
       @FXML
       public TextField total;
        @FXML
@@ -52,7 +59,7 @@ public void depositar(ActionEvent event) {
 
      double Saldo=saldoActual-cantidadTotal;
 
-     total.setText("Enhoraba has ingresat: €" + saldoActual);
+     total.setText("Enhoraba has realitzat la transferencia de: €" + saldoActual);
      double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
    
@@ -65,25 +72,34 @@ double saldo_Final=Saldo_client+saldoActual;
 
      @FXML
     void initialize() {
-        
+         Usuario u = App.banc.getUsuariActual();
        quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
         quantitat50.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
          quantitat100.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-         Usuario u = App.banc.getUsuariActual();
-        u.getPassword();
-        u.getUsername();
-        total1.setText(String.valueOf(u.getSaldo()));
-
         
-        u.getSaldo();
-    }
+       
+    total1.setText(String.valueOf(u.getSaldo()));
+
+    //VBox vbox = new VBox();
+    transferir.getItems().addAll(App.banc.getUsuarios());  
+    for (Usuario usuario : App.banc.getUsuarios()) {
+     // transferir.getItems().addAll(u.getNº_compteclient());    
+       
+
     
-   
-    @FXML
-    private void transferir() throws IOException {
-        App.setRoot("secondry1");
     }
+    }
+@FXML
+private void transferir() throws IOException {
+    App.setRoot("secondry1");
+}
+}
+
+ 
+ 
+
+  
  
     
-}
+
  
