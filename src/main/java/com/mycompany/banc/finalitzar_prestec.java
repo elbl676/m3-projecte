@@ -16,5 +16,9 @@ public class finalitzar_prestec {
     private void menu() throws IOException {
         App.setRoot("secondry1");
     }
+    @FXML
+     private void peticions() throws IOException {
+        App.setRoot("llista_peticions");
+    }
 }
  

@@ -4,10 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.res_transferencia">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.finalitzar_prestec">
    <children>
       <Label layoutX="64.0" layoutY="42.0" text="Enhorabona s'ha demanat el prestec correctament!!!" />
       <Button layoutX="74.0" layoutY="138.0" mnemonicParsing="false" onAction="#menu" text="Menu" />
       <Label layoutX="48.0" layoutY="83.0" text="Pero hauras d'esperar per saber si tel concedeixen o no" />
+      <Button layoutX="325.0" layoutY="144.0" mnemonicParsing="false" onAction="#peticions" text="Veure peticions" />
    </children>
 </AnchorPane>
