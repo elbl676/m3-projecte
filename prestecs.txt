@@ -1,0 +1,7 @@
+Nom usuari	Nom	 Cognoms	           DNI	        NºPrestecs	Aprobats	Denegats	En Espera
+user1	        Joan	 García Fernàndez          54080799W	   3	          1	            1	           1
+user2	        Marc	 Gómez Martínez	           46783456F	   5	          2	            1	           2
+user3	        Jordi	 Verges Jimenez	           54783457D	   10	          5	            2	           3
+user4	       Alicia	 Marquez Sanchez	   46783456G	   1	          1	            0	           0
+eloy	       Eloy      Blasco Tortajada	   54080799W	   4	          2	            0	           2
+
