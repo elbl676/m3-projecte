@@ -32,6 +32,13 @@ public class login {
                 
 
             
+/*
+* Aquest mètode autentica a l'usuari comparant el nom d'usuari i la contrasenya introduïts
+* amb els registres d'usuaris registrats. Si l'autenticació és correcta, el
+* usuari és redirigit al panell de control principal. Si l'autenticació falla, es mostra un missatge d'error.
+* es mostra un missatge d'error.
+* @throws IOException
+*/
 
    public void login() throws IOException {
  ArrayList<Usuario> usuarios = App.banc.getUsuarios(); 

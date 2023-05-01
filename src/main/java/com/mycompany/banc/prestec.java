@@ -49,6 +49,11 @@ double saldoActual;
 
 
  
+/*
+* Mètode per a dipositar l'import del préstec en el saldo del compte.
+*
+* @param event El ActionEvent que s'ha produït.
+*/
      
     
 public void depositar(ActionEvent event) {
@@ -63,7 +68,7 @@ public void depositar(ActionEvent event) {
 
      double Saldo=saldoActual-cantidadTotal;
 
-     total.setText("Enhoraba has rebut un prestec de: €" + saldoActual);
+     total.setText("Enhoraba has demanat un prestec de: €" + saldoActual);
      double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
    
@@ -71,7 +76,9 @@ public void depositar(ActionEvent event) {
 }
 
 
-
+/*
+* Inicialitza el formulari de dipòsit de préstecs.
+*/
 
      @FXML
     void initialize() {
@@ -86,11 +93,21 @@ public void depositar(ActionEvent event) {
     }
     
     
+/*
+* Canvia a la forma secundària.
+*
+* @throws IOException Si es produeix un error de E/S.
+*/
          @FXML
     private void switchToingres() throws IOException {
         App.setRoot("secondry1");
     }
     
+/*
+* Confirma el dipòsit del préstec i passa a la pàgina final.
+*
+* @throws IOException Si es produeix un error de E/S.
+*/
      @FXML
     private void confirmar() throws IOException {
         App.setRoot("finalitzar");

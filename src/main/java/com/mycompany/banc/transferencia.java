@@ -46,7 +46,14 @@ public class transferencia {
    public Button depositar;
      @FXML
    public Button saldo;
-     
+   
+/*
+* Realitza una operació d'ingrés quan es prem el botó corresponent.
+* Llegeix els valors dels menús desplegables de quantitat, calcula l'import total,
+* actualitza el saldo de l'usuari i mostra el resultat en pantalla.
+*
+* @param event L'esdeveniment que s'activa en prémer el botó "dipositar".
+*/  
     
 public void depositar(ActionEvent event) {
     System.out.println(quantitat20.getValue());
@@ -70,6 +77,10 @@ double saldo_Final=Saldo_client+saldoActual;
 
 
 
+/*
+* Inicialitza la pantalla de transferència, configurant els menús desplegables de quantitat
+* i el menú desplegable de la llista d'usuaris.
+*/
 
      @FXML
     void initialize() {
@@ -90,11 +101,17 @@ double saldo_Final=Saldo_client+saldoActual;
     
     }
     }
+    
+/*
+* Canvia a la pantalla de confirmació de transferència quan es prem el botó "confirmar".
+*/
    @FXML
 private void transferir() throws IOException {
    App.setRoot("res_transferencia");
 }
-    
+  /*
+* Canvia a la pantalla de confirmació de transferència quan es prem el botó "menu".
+*/  
 @FXML
 private void menu() throws IOException {
     App.setRoot("secondry1");

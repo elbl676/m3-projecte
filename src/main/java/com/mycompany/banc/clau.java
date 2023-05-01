@@ -16,6 +16,16 @@ import javafx.fxml.FXML;
  */
 public class clau {
    private ArrayList<Usuario> usuarios;
+   /*
+* Canvia la clau de l'usuari corresponent al nom d'usuari donat.
+* Si la clau actual coincideix amb la donada, s'actualitzarà la clau per la nova.
+* En cas contrari, es mostrarà un missatge d'error.
+* Si no es troba l'usuari, també es mostrarà un missatge d'error.
+*
+* @param Username el nom d'usuari de l'usuari al qual se li vol canviar la clau.
+* @param contrasenya la clau actual de l'usuari.
+* @param nuevaClave la nova clau que es vol establir.
+*/
     public void cambiarClave(String Username, String contrasenya, String nuevaClave) {
         
     // Buscamos al usuario correspondiente al nombre de usuario dado
@@ -38,7 +48,11 @@ public class clau {
     // Mostramos mensaje de error si no se encontró el usuario
     System.out.println("Error: No se encontró el usuario.");
 }
-
+/*
+* Canvia l'escena a la pantalla principal.
+*
+* @throws IOException si hi ha un error en canviar l'escena.
+*/
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("secondry1");

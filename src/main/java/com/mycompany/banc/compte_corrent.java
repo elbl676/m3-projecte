@@ -30,6 +30,9 @@ public class compte_corrent {
      @FXML
        private TextField total1;
     double saldoActual;
+    /**
+ * Inicialitza els camps del compte corrent de l'usuari actual.
+ */
      @FXML
     void initialize() {
         Usuario u = App.banc.getUsuariActual();
@@ -53,7 +56,10 @@ public class compte_corrent {
         
         u.getSaldo(); 
     }
-    
+    /**
+ * Afegeix una quantitat de diners al saldo del compte corrent.
+ * @param event l'event que es produeix al prémer el botó 'Ingressar'.
+ */
     public void sou(ActionEvent event) {
      double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
@@ -61,7 +67,10 @@ public class compte_corrent {
 double saldo_Final=Saldo_client+saldoActual;  
  total1.setText(" €" + saldo_Final);
    }
-    
+    /**
+ * Canvia la pantalla a la pantalla principal del programa.
+ * @throws IOException si hi ha un error amb la càrrega de la pantalla.
+ */
   
    @FXML
     private void menu() throws IOException {
