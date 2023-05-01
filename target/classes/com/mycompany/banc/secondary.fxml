@@ -25,6 +25,7 @@
         <Label text="Clients View" />
       <Button mnemonicParsing="false" onAction="#escull" text="comptes" />
       <Button fx:id="prestec" mnemonicParsing="false" onAction="#prestamo" text="Prestec" />
+      <Button fx:id="Factura" mnemonicParsing="false" onAction="#facturas" text="Facturas" />
         <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Switch to Primary View" />
     </children>
     <padding>

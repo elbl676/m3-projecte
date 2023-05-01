@@ -1,0 +1,8 @@
+
+
+Nom usuari   Nom_client  Cognoms_client     DNI_client  Habitacles  Llum i gas  Aigua  Propietats
+User1	        Joan	 García Fernàndez    54084799S	   750 €	100 €	50 €	300 €
+User2	        Marc	  Gómez Martínez     46783456F	   680 €	95 €	45 €	250 €
+User3	       Jordi	  Verges Jimenez     54783457D	   700 €	93 €	47 €	280 €
+User4	      Alicia	  Màrquez Sanchez    46783456G	   690 €	95 €	55 €	330 €
+eloy	      Eloy	  Blasco Tortajada   54080799W	   660 €	85 €	55 €	350 €
