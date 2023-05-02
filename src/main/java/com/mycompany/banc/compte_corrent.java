@@ -29,6 +29,7 @@ public class compte_corrent {
        private TextField nºcompte;
      @FXML
        private TextField total1;
+     
     double saldoActual;
     /**
  * Inicialitza els camps del compte corrent de l'usuari actual.
@@ -39,6 +40,7 @@ public class compte_corrent {
         u.getPassword();
         u.getUsername();
         Nom.setText(u.getNom_client());
+        
         Cognoms.setText(u.getCognoms_client());
         DNI.setText(u.getDNI_client());
         nºtarjeta.setText(u.getNº_tarjeta());

@@ -67,5 +67,9 @@ Mètode que permet canviar a la vista de gestió de préstecs bancaris del clien
     private void facturas() throws IOException {
         App.setRoot("factures");
     }
+     @FXML
+    private void cheque() throws IOException {
+        App.setRoot("cheque");
+    }
 }
  

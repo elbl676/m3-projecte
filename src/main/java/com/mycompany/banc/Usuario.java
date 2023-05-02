@@ -18,6 +18,7 @@ public class Usuario {
      private String Nº_tarjeta;
      private double saldo;
      private double import_factures;
+      private double saldo_estalvis;
     
    /*
 * Crea un nou usuari amb el nom d'usuari, contrasenya, nom, cognoms, ANEU, número de compte, número de targeta i saldo especificats.
@@ -31,7 +32,7 @@ public class Usuario {
 * @param núm._Tarjetaclient el número de targeta de l'usuari
 * @param Saldo_client el saldo de l'usuari
 */
-    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient, String nº_Tarjetaclient, int Saldo_client, String import_factures1, int import_factures) {
+    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient, String nº_Tarjetaclient, int Saldo_client, int import_factures, int saldo_estalvis) {
         this.username = username;
         this.password = password;
          this.DNI_client=dni_client;
