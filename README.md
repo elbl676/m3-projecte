@@ -46,5 +46,31 @@ Un cop entrem en aquesta pantalla anirem al botó veure peticions per veure l'hi
 
 Ens apareixerà aquesta pantalla on tenim el botó menú que retornará al menu principal.
 
+3.1.3 Facturas
+
+![Captura](https://user-images.githubusercontent.com/119842178/236003916-b6f737da-226a-4f91-8cbe-6eba08a76f09.PNG)
+
+Un cop entrem a factures veurem aquesta pantalla on introduirem el preu que ens indica amb un assumpte i clicarem a realitzar pagament
+
+![Captura1](https://user-images.githubusercontent.com/119842178/236004349-4da5c92e-1262-431a-acb5-fee34dc47811.PNG)
+
+Llavors ens sortirà la factura completa de totes les accions per obtenir la factura final.
+
+També tenim un botó menu on podrem tornar al nostre menu.
+
+3.1.4 Xecs
+
+![Captura2](https://user-images.githubusercontent.com/119842178/236004803-62162138-c4d0-425e-9d94-942168e13373.PNG)
+
+Per acabar aquesta secció tenim els xecs que haurem d'introduir la quantitat a pagar i ens anira actualitzant el saldo,es a dir introuirem una quantitat de diners ens sortirá el total i ens ho restarà del saldo degut a que es per realitzar un pagament.
+
+Per acabar aquesta secció tenim el botó menu que torna al menu.
+
+Com a conclusió diré que he tret la mateixa plantilla pels xecs,factures,prestecs i ingresar i retirar diners per que em va agradar la visualitzacio.
+
+4.Retirar diners
+
+
+
 
 
