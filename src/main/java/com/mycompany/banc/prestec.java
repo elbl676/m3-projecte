@@ -83,9 +83,9 @@ public void depositar(ActionEvent event) {
      @FXML
     void initialize() {
         
-       quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-        quantitat50.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-         quantitat100.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
+       quantitat20.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
+        quantitat50.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
+         quantitat100.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
          
 
         

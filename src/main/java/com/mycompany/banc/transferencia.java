@@ -85,9 +85,9 @@ double saldo_Final=Saldo_client+saldoActual;
      @FXML
     void initialize() {
          Usuario u = App.banc.getUsuariActual();
-       quantitat20.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-        quantitat50.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
-         quantitat100.getItems().addAll("1","2","3","4","5","6","7","8","9","10");
+       quantitat20.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
+        quantitat50.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
+         quantitat100.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
         
        
     total1.setText(String.valueOf(u.getSaldo()));
