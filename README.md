@@ -7,6 +7,7 @@ Eloy Blasco Tortajada 1r DAW
 1. Login
 
 ![Captura de 2023-05-03 08-55-10](https://user-images.githubusercontent.com/119842178/235850553-f12b244e-d789-4167-80c9-ea94ae046a52.png)
+
 Començarem amb el Login,tenim una serie d'usuaris i contrasenya amb les seves dades enmagatzemades en un array-List on amb aquests usuaris haurem d'iniciar sessió,tenim la condició de que només tenim 3 intents per realitzar l'inici de sessió,1 cop haguem realitzat els 3 intents i no haguem encertat se'ns bloquejarà el nostre usuari.
 
 2. Menu
@@ -27,6 +28,7 @@ Ho mostrarem amb un u.get i la variable corresponent amb el nom del textField co
 Dintre de saldo_client tenim 5 botons adicionals com son: comptes,on podrem escullir el tipus de compte que a nosaltres ens interesi en aquell moment,prestec per demanar un prestec,facturas per realitzar el pagament de les nostres factures,xecs per realitzar el pagament d'un xec i per acabar switch to Primary view per tornar al menu.
 
 3.1.1 comptes
+
 Com he dit abans si cliquem el botó comptes,ens redirigirá a una pantalla on podrem escollir entre compte corrent i compte d'estalvis.
 -Compte corrent:Dintre del compte corrent ens sortirà les dades del client i el saldo que tenim actualment en la conta.
 Per poder ficar el sou ens ho calcula a través del botó sou,després tenim el botó menu per poder tornar al nostre menu principal.
@@ -35,6 +37,7 @@ Per poder ficar el sou ens ho calcula a través del botó sou,després tenim el 
 3.1.2 Prestec
 
 ![Captura de 2023-05-03 09-54-20](https://user-images.githubusercontent.com/119842178/235860455-0c979796-9880-4789-8466-35009dcba383.png)
+
 Dintre del botó Prestec podem veure com seleccionarem la quantitat que volem demanar un prestec,llavors en redirigirá a una pantalla on ens dirá que haurem d'esperar a que ens el concedeixin o no,per accedir a aquesta pantalla clicarem el botó finalitzar.
 
 ![Captura de 2023-05-03 09-59-48](https://user-images.githubusercontent.com/119842178/235861299-0ff2137e-6425-4e80-9c2e-350dd05a28ad.png)
