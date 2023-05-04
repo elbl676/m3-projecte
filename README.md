@@ -114,7 +114,7 @@ Per acabar tenim el Logout,que la seva funció es que al clicar el botó logout 
 
 Aqui podem veure el nostre diagrama UML
 
-10. CONCLUSIO
+10. CONCLUSIÓ
 
 Com a conclusió trec que ha estat un projecte bastant complet i dificil en certes parts que he pogut realitzar gracies a l'ajuda del professor i de llocs web que he pogut trobar,també m'ha servit per realitzar la meva 1a aplicació web i m'ha servit per aprendre el que hem treballat durant el curs,i crec que puc estar satisfet amb el treball realitzat i el resultat obtingut.
 
