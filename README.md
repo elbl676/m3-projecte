@@ -73,3 +73,50 @@ Per acabar aquesta secció tenim el botó menu que torna al menu.
 Com a conclusió diré que he tret la mateixa plantilla pels xecs,factures,prestecs i ingresar i retirar diners per que em va agradar la visualitzacio.
 
 4.Retirar diners
+
+Una altra opció que tenim seria clicar al botó Retirar diners,que seria seleccionar la quantitat de diners a extreure.
+
+![Captura de 2023-05-04 08-38-04](https://user-images.githubusercontent.com/119842178/236128692-c1a05409-9956-4796-8474-e14c93bd6e89.png)
+
+Aqui podem veure l'exemple d'execució,on podem veure on seleccionem la quantitat de diners a extreure,un cop hem seleccionat la quantitat ens actualitzará el saldo,i ens sorrtirá la quantitat total que hem extret.
+Per acabar veiem que disposa del botó menu per tornar al menu principal.
+ 
+5. Canviar clau
+
+![Captura de 2023-05-04 08-41-53](https://user-images.githubusercontent.com/119842178/236129182-a593386c-1d2c-4276-ae54-8c0434684f72.png)
+
+Aquesta acció es per canviar la clau del nostre usuari,pero no vaig aconseguir que funcionés correctament,ja que només es veu com fiquem la clau actual i la nova i teoricament s'hauria d'actualitzar pero no ho fa per que no vaig arribar a aconsiguir l'objectiu principal.
+Té un botó que retorna al menu.
+
+6. Ingresar Diners
+
+![Captura de 2023-05-04 08-50-01](https://user-images.githubusercontent.com/119842178/236131120-004b5c6f-7f1e-47c5-a544-04d9d6868e88.png)
+
+En l'acció de ingresar diners seria semblant a la d'extreure,seleccionarem la quantitat de diners que volem,ens actualitzará el saldo i ens mostrará la quantitat total de diners importada.
+
+7. Transferencia
+
+![Captura de 2023-05-04 08-54-08](https://user-images.githubusercontent.com/119842178/236131791-ac35a257-f64e-4473-bf34-73e1cd1d662a.png)
+
+Ara tenim l'accio de realitzar una transferéncia,per començar seleccionem la quantitat de diners que volem per realitzar la transferencia,com sempre ens indicará la quantitat de diners que realitzarem la transferencia,escollirem el compte al qual realitzarem la transferencia,i clicarem al botó transferir.
+
+![Captura de 2023-05-04 08-58-00](https://user-images.githubusercontent.com/119842178/236132526-2ea6e44e-8e6f-4f8d-a1a3-68dce91589a1.png)
+
+Ens obrirá aquesta pantalla que indica que s'ha realitzat la transferencia,llavors els diners que hem retirat haurien d'arribar a la conta corresponent,pero no he estat capaç d'aconseguir-ho. Tindrá un botó menu per tornar al menu principal.
+
+8. Logout
+
+Per acabar tenim el Logout,que la seva funció es que al clicar el botó logout desconnectara de la conta corresponent. 
+
+9. Diagrama UML
+
+![Diagrama UML Caixer_Automàtic](https://user-images.githubusercontent.com/119842178/236133457-9c382b40-cbfa-433f-a1c2-32cf0a49c199.png)
+
+Aqui podem veure el nostre diagrama UML
+
+10. CONCLUSIO
+
+Com a conclusió trec que ha estat un projecte bastant complet i dificil en certes parts que he pogut realitzar gracies a l'ajuda del professor i de llocs web que he pogut trobar,també m'ha servit per realitzar la meva 1a aplicació web i m'ha servit per aprendre el que hem treballat durant el curs,i crec que puc estar satisfet amb el treball realitzat i el resultat obtingut.
+
+
+
