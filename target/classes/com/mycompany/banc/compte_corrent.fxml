@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.compte_corrent">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@caixer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.banc.compte_corrent">
    <children>
      
       <Label layoutX="41.0" layoutY="306.0" text="Clients View" />
@@ -23,5 +23,6 @@
       <Label layoutX="291.0" layoutY="20.0" text="Saldo actual: " />
       <TextField fx:id="total1" layoutX="399.0" layoutY="16.0" />
       <Button fx:id="sou" layoutX="405.0" layoutY="216.0" mnemonicParsing="false" text="sou" />
+      <Button layoutX="414.0" layoutY="302.0" mnemonicParsing="false" onAction="#moviments" text="moviments" />
    </children>
 </AnchorPane>
