@@ -79,4 +79,8 @@ double saldo_Final=Saldo_client+saldoActual;
         App.setRoot("secondry1");
     }   
     
+     @FXML
+    private void moviments() throws IOException {
+        App.setRoot("moviments");
+    }  
 }

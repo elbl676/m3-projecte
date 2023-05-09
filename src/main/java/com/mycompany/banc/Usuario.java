@@ -4,6 +4,8 @@
  */
 package com.mycompany.banc;
 
+import java.util.List;
+
 
 /*
 * Representa a un usuari del sistema bancari.
@@ -219,7 +221,8 @@ public class Usuario {
     public void setImport_factures(double import_factures) {
         this.import_factures = import_factures;
     }
-    
+
+  
     
 
     

@@ -5,6 +5,7 @@
 package com.mycompany.banc;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -93,6 +94,13 @@ El mètode main crea un objecte Banc i registra alguns usuaris.
         banc.iniciarSesion("eloy", "banc");
         
     }
+    
+
+   
+
+   
+    
+
     
 }
 

@@ -17,6 +17,16 @@ public class dades_client {
       private TextField DNI_client;
     @FXML
        private TextField num_compte_client;
+    
+    private String nombre;
+    private String numeroCuenta;
+
+    public dades_client(String nombre, String numeroCuenta, String a) {
+        this.nombre = nombre;
+        this.numeroCuenta = numeroCuenta;
+    }
+    
+
    /**
 
 Mètode que inicialitza la classe per mostrar les dades del client loggejat
@@ -71,5 +81,35 @@ Mètode que permet canviar a la vista de gestió de préstecs bancaris del clien
     private void cheque() throws IOException {
         App.setRoot("cheque");
     }
+
+    public TextField getNom_client() {
+        return nom_client;
+    }
+
+    public void setNom_client(TextField nom_client) {
+        this.nom_client = nom_client;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(String numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+    public dades_client() {
+    // Constructor sin argumentos
+}
+
+    
+    
 }
  
