@@ -1,5 +1,6 @@
 package com.mycompany.banc;
 
+import static com.mycompany.banc.Banc.obtenerFechaActual;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -57,6 +58,7 @@ double saldoActual;
      
     
 public void depositar(ActionEvent event) {
+    boolean registroExitoso = false;
     System.out.println(quantitat20.getValue());
     int iquantitat20 = Integer.parseInt(quantitat20.getValue().toString());
     int iquantitat50 = Integer.parseInt(quantitat50.getValue().toString());
@@ -71,9 +73,64 @@ public void depositar(ActionEvent event) {
      total.setText("Enhoraba has demanat un prestec de: €" + saldoActual);
      double Saldo_client=App.banc.getUsuariActual().getSaldo();
 
+     
+     // Crear una instancia del movimiento de ingreso
+        String nom_client = App.banc.getUsuariActual().getNom_client();
+        String tipusMov = "Prestec";
+        double Saldo2 = saldoActual;
+        String data = obtenerFechaActual();
+
+        Movimiento movimientotransferencia = new Movimiento(nom_client, tipusMov, saldoActual, data);
+
+        // Agregar el movimiento de ingreso a la lista MOV
+        Movimiento.MOV.add(movimientotransferencia);
+
+        // Llamar al método guardarMovs() y verificar el resultado
+        if (Movimiento.guardarMovs()) {
+            registroExitoso = true;
+        }
+     else {
+        // Manejar el caso en el que no se haya seleccionado ningún valor en el ComboBox
+       
+    }
+     // Mostrar un mensaje de error o realizar alguna acción adecuada
+
+    if (registroExitoso) {
+        // El registro se realizó correctamente
+        System.out.println("El registro se realizó correctamente");
+    } else {
+        // Hubo un error en el registro
+        System.out.println("Error al realizar el registro");
+    }
+
+    
+        
+        // Crear una instancia del movimiento de ingreso
+     nom_client = App.banc.getUsuariActual().getNom_client();
+     tipusMov = "Prestec";
+     saldoActual = saldoActual;
+    data = obtenerFechaActual();
+
+    Movimiento movimientoprestec = new Movimiento(nom_client, tipusMov, saldoActual, data);
+
+    // Agregar el movimiento de ingreso a la lista MOV
+    Movimiento.MOV.add(movimientoprestec);
+
+    // Llamar al método guardarMovs() y verificar si el guardado fue exitoso
+    boolean guardadoExitoso = Movimiento.guardarMovs();
+
+    if (guardadoExitoso) {
+        // Realizar acciones adicionales si el guardado fue exitoso, por ejemplo, mostrar un mensaje de éxito
+        System.out.println("Los movimientos se han guardado correctamente en el archivo MOVIMENTS.csv");
+    } else {
+        // Realizar acciones adicionales si hubo un error en el guardado, por ejemplo, mostrar un mensaje de error
+        System.out.println("Ha ocurrido un error al guardar los movimientos");
+    }
+    
+    }
    
 
-}
+
 
 
 /*
