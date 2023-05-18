@@ -4,10 +4,13 @@
  */
 package com.mycompany.banc;
 
+import static com.mycompany.banc.Banc.obtenerFechaActual;
+
 /**
  *
  * @author alumne
  */
 class movimiento {
+      
     
 }

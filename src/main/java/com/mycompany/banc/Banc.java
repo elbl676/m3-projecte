@@ -63,9 +63,9 @@ public class Banc {
         String data = obtenerFechaActual();
 
         // Crear una instancia del movimiento de ingreso
-        Movimiento movimientoIngreso = new Movimiento(nom_client, tipusMov, saldo, obtenerFechaActual());
+        Movimientos movimientoIngreso = new Movimientos(nom_client, tipusMov, saldo, obtenerFechaActual());
         // Agregar el movimiento de ingreso a la lista MOV
-        Movimiento.MOV.add(movimientoIngreso);
+        Movimientos.MOV.add(movimientoIngreso);
         
         // Realizar una transferencia
 nom_client = u.getNom_client();
@@ -74,9 +74,9 @@ nom_client = u.getNom_client();
  data = obtenerFechaActual();
 
 // Crear una instancia del movimiento de transferencia
-Movimiento movimientoTransferencia = new Movimiento(nom_client, tipusMov, saldo, obtenerFechaActual());
+Movimientos movimientoTransferencia = new Movimientos(nom_client, tipusMov, saldo, obtenerFechaActual());
 // Agregar el movimiento de transferencia a la lista MOV
-Movimiento.MOV.add(movimientoTransferencia);
+Movimientos.MOV.add(movimientoTransferencia);
 
 // Realizar una extracción
 nom_client = u.getNom_client();
@@ -85,12 +85,12 @@ saldo = u.getSaldo();
 data = obtenerFechaActual();
 
 // Crear una instancia del movimiento de extracción
-Movimiento movimientoExtraccion = new Movimiento(nom_client, tipusMov, saldo, obtenerFechaActual());
+Movimientos movimientoExtraccion = new Movimientos(nom_client, tipusMov, saldo, obtenerFechaActual());
 // Agregar el movimiento de extracción a la lista MOV
-Movimiento.MOV.add(movimientoExtraccion);
+Movimientos.MOV.add(movimientoExtraccion);
 
 // Llamar al método guardarMovs()
-        Movimiento.guardarMovs();
+        Movimientos.guardarMovs();
     }
 
     public static String obtenerFechaActual() {
@@ -100,7 +100,7 @@ Movimiento.MOV.add(movimientoExtraccion);
     
     // Obtener los movimientos de varios días
 public static void obtenerMovimientosVariosDias(LocalDate fechaInicio, LocalDate fechaFin) {
-    for (Movimiento movimiento : Movimiento.MOV) {
+    for (Movimientos movimiento : Movimientos.MOV) {
         LocalDate fechaMovimiento = LocalDate.parse(movimiento.getData());
         if (!fechaMovimiento.isBefore(fechaInicio) && !fechaMovimiento.isAfter(fechaFin)) {
             System.out.println(movimiento.toString());

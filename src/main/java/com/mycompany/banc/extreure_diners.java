@@ -101,59 +101,31 @@ double saldoActual;
 double saldo_Final=Saldo_client-saldoActual;  
  total1.setText(" €" + saldo_Final);
  
-   // Crear una instancia del movimiento de ingreso
-        String nom_client = App.banc.getUsuariActual().getNom_client();
-        String tipusMov = "Extraccion";
-        double Saldo = saldoActual;
-        String data = obtenerFechaActual();
+ 
+ String nom_client = App.banc.getUsuariActual().getNom_client();
+double saldoTransferencia = saldoActual; // Saldo para la transferencia
+double saldoExtraccion = saldoActual; // Saldo para la extracción
+String data = obtenerFechaActual();
+ 
+   // Crear una instancia del movimiento de transferencia
+String tipusMov = "extraccio";
+Movimientos movimientotransferencia = new Movimientos(nom_client, tipusMov, saldoTransferencia, data);
+Movimientos.MOV.add(movimientotransferencia);
 
-        Movimiento movimientoIngreso = new Movimiento(nom_client, tipusMov, saldo, data);
+// Llamar al método guardarMovs() y verificar el resultado
+ registroExitoso = Movimientos.guardarMovs();
 
-        // Agregar el movimiento de ingreso a la lista MOV
-        Movimiento.MOV.add(movimientoIngreso);
-
-        // Llamar al método guardarMovs() y verificar el resultado
-        if (Movimiento.guardarMovs()) {
-            registroExitoso = true;
-        }
-     else {
-        // Manejar el caso en el que no se haya seleccionado ningún valor en el ComboBox
-       
-    }
-     // Mostrar un mensaje de error o realizar alguna acción adecuada
-
-    if (registroExitoso) {
-        // El registro se realizó correctamente
-        System.out.println("El registro se realizó correctamente");
-    } else {
-        // Hubo un error en el registro
-        System.out.println("Error al realizar el registro");
-    }
+if (registroExitoso) {
+    // El registro se realizó correctamente
+    System.out.println("El registro de la transferencia se realizó correctamente");
+} else {
+    // Hubo un error en el registro
+    System.out.println("Error al realizar el registro de la transferencia");
+}
 
     
         
-        // Crear una instancia del movimiento de ingreso
-     nom_client = App.banc.getUsuariActual().getNom_client();
-     tipusMov = "Extraccion";
-     saldo = saldoActual;
-    data = obtenerFechaActual();
-
-    Movimiento movimientoExtraccion = new Movimiento(nom_client, tipusMov, saldo, data);
-
-    // Agregar el movimiento de ingreso a la lista MOV
-    Movimiento.MOV.add(movimientoExtraccion);
-
-    // Llamar al método guardarMovs() y verificar si el guardado fue exitoso
-    boolean guardadoExitoso = Movimiento.guardarMovs();
-
-    if (guardadoExitoso) {
-        // Realizar acciones adicionales si el guardado fue exitoso, por ejemplo, mostrar un mensaje de éxito
-        System.out.println("Los movimientos se han guardado correctamente en el archivo MOVIMENTS.csv");
-    } else {
-        // Realizar acciones adicionales si hubo un error en el guardado, por ejemplo, mostrar un mensaje de error
-        System.out.println("Ha ocurrido un error al guardar los movimientos");
-    }
-    
+       
     }
      
 
@@ -163,6 +135,7 @@ double saldo_Final=Saldo_client-saldoActual;
      * @param event
      */
     public void saldo(ActionEvent event) {
+         boolean registroExitoso = false;
     System.out.println(quantitat20.getValue());
     int iquantitat20 = Integer.parseInt(quantitat20.getValue().toString());
     int iquantitat50 = Integer.parseInt(quantitat50.getValue().toString());
@@ -175,6 +148,27 @@ double saldo_Final=Saldo_client-saldoActual;
      double saldoT=saldo-saldoActual;
 
      total.setText("Enhoraba has extret: €" + saldoT);
+     
+     String nom_client = App.banc.getUsuariActual().getNom_client();
+
+double saldocheque = saldoActual; // Saldo para la extracción
+String data = obtenerFechaActual();
+
+// Crear una instancia del movimiento de transferencia
+String tipusMov = "cheque";
+Movimientos movimientocheque = new Movimientos(nom_client, tipusMov, saldocheque, data);
+Movimientos.MOV.add(movimientocheque);
+
+// Llamar al método guardarMovs() y verificar el resultado
+ registroExitoso = Movimientos.guardarMovs();
+
+if (registroExitoso) {
+    // El registro se realizó correctamente
+    System.out.println("El registro de la transferencia se realizó correctamente");
+} else {
+    // Hubo un error en el registro
+    System.out.println("Error al realizar el registro de la transferencia");
+}
      
 }
    

@@ -223,8 +223,8 @@ public class Usuario {
         this.import_factures = import_factures;
     }
 
-    ArrayList<Movimiento> getMovimientos() {
-        ArrayList<Movimiento> MOV = new ArrayList<>() ;
+    ArrayList<Movimientos> getMovimientos() {
+        ArrayList<Movimientos> MOV = new ArrayList<>() ;
     return MOV; // Devuelve la lista de movimientos del usuario
 }
 
