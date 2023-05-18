@@ -4,6 +4,7 @@
  */
 package com.mycompany.banc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -221,6 +222,14 @@ public class Usuario {
     public void setImport_factures(double import_factures) {
         this.import_factures = import_factures;
     }
+
+    ArrayList<Movimiento> getMovimientos() {
+        ArrayList<Movimiento> MOV = new ArrayList<>() ;
+    return MOV; // Devuelve la lista de movimientos del usuario
+}
+
+
+    
 
   
     

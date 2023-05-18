@@ -2,6 +2,7 @@ package com.mycompany.banc;
 
 import static com.mycompany.banc.Banc.obtenerFechaActual;
 import java.io.IOException;
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -260,21 +261,18 @@ if (guardadoExitoso) {
      */
 
 
-     @FXML
-    void initialize() {
-        
-       quantitat20.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
-        quantitat50.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
-         quantitat100.getItems().addAll("0","1","2","3","4","5","6","7","8","9","10");
-         Usuario u = App.banc.getUsuariActual();
-        u.getPassword();
-        u.getUsername();
-        saldo.setText(String.valueOf(u.getSaldo()));
-
-        
-        u.getSaldo();
-    }
+    @FXML
+void initialize() {
+    quantitat20.getItems().addAll("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
+    quantitat50.getItems().addAll("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
+    quantitat100.getItems().addAll("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
     
+    Usuario u = App.banc.getUsuariActual();
+    saldo.setText(String.valueOf(u.getSaldo()));
+
+    
+}
+
     
    /**
      * Canvia la finestra actual a la finestra d'ingrés.
@@ -287,9 +285,10 @@ if (guardadoExitoso) {
         App.setRoot("secondry1");
     }
         
-    }
+}
 
-   
+
+ 
     
    
 

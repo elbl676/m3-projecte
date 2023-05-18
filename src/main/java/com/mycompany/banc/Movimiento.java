@@ -24,6 +24,14 @@ public class Movimiento {
     this.data = data;
 }
 
+    public static ArrayList<Movimiento> getMOV() {
+        return MOV;
+    }
+
+    public static void setMOV(ArrayList<Movimiento> MOV) {
+        Movimiento.MOV = MOV;
+    }
+
 
 
     public String getNom_client() {
@@ -94,6 +102,10 @@ public class Movimiento {
     }
     return false; // Retorna false si hubo algún error en el guardado
 }
+
+    CharSequence getFecha() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    
 
 }

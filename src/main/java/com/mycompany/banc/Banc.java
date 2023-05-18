@@ -4,6 +4,7 @@
  */
 package com.mycompany.banc;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,9 +94,28 @@ Movimiento.MOV.add(movimientoExtraccion);
     }
 
     public static String obtenerFechaActual() {
-        return "2023-05-17";
-    }
+    LocalDate fechaActual = LocalDate.now();
+    return fechaActual.toString();
 }
+    
+    // Obtener los movimientos de varios días
+public static void obtenerMovimientosVariosDias(LocalDate fechaInicio, LocalDate fechaFin) {
+    for (Movimiento movimiento : Movimiento.MOV) {
+        LocalDate fechaMovimiento = LocalDate.parse(movimiento.getData());
+        if (!fechaMovimiento.isBefore(fechaInicio) && !fechaMovimiento.isAfter(fechaFin)) {
+            System.out.println(movimiento.toString());
+        }
+         LocalDate fechaInici = LocalDate.of(2023, 5, 15);
+LocalDate fechaFi = LocalDate.of(2023, 7, 21);
+obtenerMovimientosVariosDias(fechaInicio, fechaFin);
+    }
+   
+}
+
+
+}
+
+
 
     
     
