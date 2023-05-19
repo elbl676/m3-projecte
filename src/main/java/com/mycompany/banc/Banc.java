@@ -23,6 +23,9 @@ public class Banc {
         usuarios.add(new Usuario("user4", "contraseña4", "Alicia", "Marquez Sanchez","46783456G","ES4100119674480891876465", "4200832023470665", 2670,1170, 2100, 10,10,10));
         usuarios.add(new Usuario("eloy", "banc", "Eloy", "Blasco Tortajada","54080799W","EL92340138651026547", "4388585760455711", 3800,1150, 1800, 10,10,10));
     }
+    
+   
+
 
     public ArrayList<Usuario> getUsuarios() {
         return usuarios;
@@ -111,9 +114,12 @@ obtenerMovimientosVariosDias(fechaInicio, fechaFin);
     }
    
 }
-
-
 }
+
+
+
+
+
 
 
 

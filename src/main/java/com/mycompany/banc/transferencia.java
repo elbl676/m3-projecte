@@ -99,10 +99,17 @@ if (registroExitoso) {
 }
 
 
+}
+
+
+
+
+
+
      
 
 
-}
+
 
 /*
 * Inicialitza la pantalla de transferència, configurant els menús desplegables de quantitat
@@ -128,6 +135,7 @@ if (registroExitoso) {
     
     }
     }
+  
     
 /*
 * Canvia a la pantalla de confirmació de transferència quan es prem el botó "confirmar".
@@ -144,6 +152,7 @@ private void menu() throws IOException {
     App.setRoot("secondry1");
 }
 }
+
 
 
 

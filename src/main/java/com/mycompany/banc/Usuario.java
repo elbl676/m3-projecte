@@ -26,6 +26,9 @@ public class Usuario {
       private double bitllets_50;
       private double bitllets_100;
       
+      
+    
+
     
    /*
 * Crea un nou usuari amb el nom d'usuari, contrasenya, nom, cognoms, ANEU, número de compte, número de targeta i saldo especificats.
@@ -50,8 +53,8 @@ public class Usuario {
        this.saldo=Saldo_client;
        this.import_factures=import_factures;
        this.bitllets_20=nº_bitllets_20;
-       this.bitllets_20=nº_bitllets_50;
-       this.bitllets_20=nº_bitllets_100;
+       this.bitllets_50=nº_bitllets_50;
+       this.bitllets_100=nº_bitllets_100;
     }
 
     public double getBitllets_20() {
@@ -258,6 +261,38 @@ public class Usuario {
         ArrayList<Movimientos> MOV = new ArrayList<>() ;
     return MOV; // Devuelve la lista de movimientos del usuario
 }
+    
+     
+    // Method to deposit banknotes
+    public void depositBanknotes(double amount, double denomination) {
+        if (denomination == 20) {
+            bitllets_20 += amount;
+        } else if (denomination == 50) {
+            bitllets_50 += amount;
+        } else if (denomination == 100) {
+            bitllets_100 += amount;
+        }
+    }
+
+    // Method to withdraw banknotes
+    public void withdrawBanknotes(double amount, double denomination) {
+        if (denomination == 20) {
+            bitllets_20 -= amount;
+        } else if (denomination == 50) {
+            bitllets_50 -= amount;
+        } else if (denomination == 100) {
+            bitllets_100 -= amount;
+        }
+    }
+
+    // Method to transfer banknotes from this user to another user
+    public void transferBanknotes(double amount, double denomination, Usuario recipient) {
+        withdrawBanknotes(amount, denomination);
+        recipient.depositBanknotes(amount, denomination);
+    }
+
+    // ...
+}
 
 
     
@@ -270,7 +305,7 @@ public class Usuario {
    
     
    
-}
+
 
 
     
