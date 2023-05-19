@@ -22,6 +22,10 @@ public class Usuario {
      private double saldo;
      private double import_factures;
       private double saldo_estalvis;
+      private double bitllets_20;
+      private double bitllets_50;
+      private double bitllets_100;
+      
     
    /*
 * Crea un nou usuari amb el nom d'usuari, contrasenya, nom, cognoms, ANEU, número de compte, número de targeta i saldo especificats.
@@ -35,7 +39,7 @@ public class Usuario {
 * @param núm._Tarjetaclient el número de targeta de l'usuari
 * @param Saldo_client el saldo de l'usuari
 */
-    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient, String nº_Tarjetaclient, int Saldo_client, int import_factures, int saldo_estalvis) {
+    public Usuario(String username, String password, String nom_client, String cognoms_client, String dni_client, String nº_compteclient, String nº_Tarjetaclient, int Saldo_client, int import_factures, int saldo_estalvis, int nº_bitllets_50, int nº_bitllets_100, int nº_bitllets_20) {
         this.username = username;
         this.password = password;
          this.DNI_client=dni_client;
@@ -45,6 +49,33 @@ public class Usuario {
         this.Nº_tarjeta=nº_Tarjetaclient;
        this.saldo=Saldo_client;
        this.import_factures=import_factures;
+       this.bitllets_20=nº_bitllets_20;
+       this.bitllets_20=nº_bitllets_50;
+       this.bitllets_20=nº_bitllets_100;
+    }
+
+    public double getBitllets_20() {
+        return bitllets_20;
+    }
+
+    public void setBitllets_20(double bitllets_20) {
+        this.bitllets_20 = bitllets_20;
+    }
+
+    public double getBitllets_50() {
+        return bitllets_50;
+    }
+
+    public void setBitllets_50(double bitllets_50) {
+        this.bitllets_50 = bitllets_50;
+    }
+
+    public double getBitllets_100() {
+        return bitllets_100;
+    }
+
+    public void setBitllets_100(double bitllets_100) {
+        this.bitllets_100 = bitllets_100;
     }
 
     

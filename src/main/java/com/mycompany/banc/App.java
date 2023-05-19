@@ -21,7 +21,7 @@ public class App extends Application {
     
     static Banc banc = new Banc();
     static com.mycompany.banc.clients clients = new clients("nom", "cognoms", "er", "Nº_compte","Nº_Tarjeta");
-
+     
     private static Object getInstance() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
