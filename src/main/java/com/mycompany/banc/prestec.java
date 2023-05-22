@@ -81,7 +81,11 @@ String data = obtenerFechaActual();
 
 // Crear una instancia del movimiento de transferencia
 String tipusMov = "prestamo";
-Movimientos movimientoprestamo = new Movimientos(nom_client, tipusMov, saldoprestamo, data);
+String nomBitllets = iquantitat20 + "x20€, " + iquantitat50 + "x50€, " + iquantitat100 + "x100€";
+        double numBitllets20 = App.banc.getUsuariActual().getBitllets_20();
+        double numBitllets50 = App.banc.getUsuariActual().getBitllets_50();
+        double numBitllets100 = App.banc.getUsuariActual().getBitllets_100();
+Movimientos movimientoprestamo = new Movimientos(nom_client, tipusMov, saldoprestamo, data, nomBitllets, numBitllets20, numBitllets50, numBitllets100);
 Movimientos.MOV.add(movimientoprestamo);
 
 // Llamar al método guardarMovs() y verificar el resultado
@@ -141,6 +145,10 @@ if (registroExitoso) {
 
    
     
+   
+
+
+
    
 
 

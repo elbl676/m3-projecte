@@ -20,6 +20,9 @@ import javafx.scene.control.TextField;
  */
 
 public class Client {
+
+    public Client(String joan, String garcía_Fernàndez, String w, String eL9234013865102654781208, String nº_tarjeta_client) {
+    }
     /*
 * El camp de text per al nom del client.
 */

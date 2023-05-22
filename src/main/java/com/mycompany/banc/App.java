@@ -7,25 +7,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import javafx.fxml.FXML;
 
 /**
  * JavaFX App
  */
 public class App extends Application {
 
-    private static Scene scene;
+    public static Scene scene;
     
-    static Banc banc = new Banc();
-    static com.mycompany.banc.clients clients = new clients("nom", "cognoms", "er", "Nº_compte","Nº_Tarjeta");
+    public static Banc banc = new Banc();
      
-    private static Object getInstance() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"), 650, 500);
@@ -33,7 +24,6 @@ public class App extends Application {
         stage.setResizable(false);
         stage.show();
         // Inicializar la lista de transacciones del usuario actual
-    
     }
 
     static void setRoot(String fxml) throws IOException {
@@ -48,10 +38,4 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-   
-
-
-
-
-
 }

@@ -88,59 +88,55 @@ double saldoActual;
      * 
      * @param event Event que es dispara quan es fa clic al botó Depositar.
      */
-     public void depositar(ActionEvent event) {
-        boolean registroExitoso = false;
-        boolean guardadoExitoso = Movimientos.guardarMovs();
+    public void depositar(ActionEvent event) {
+    boolean registroExitoso = false;
+    boolean guardadoExitoso = Movimientos.guardarMovs();
 
-        if (quantitat20.getValue() != null && quantitat50.getValue() != null && quantitat100.getValue() != null) {
-            int iquantitat20 = Integer.parseInt(quantitat20.getValue().toString());
-            int iquantitat50 = Integer.parseInt(quantitat50.getValue().toString());
-            int iquantitat100 = Integer.parseInt(quantitat100.getValue().toString());
+    if (quantitat20.getValue() != null && quantitat50.getValue() != null && quantitat100.getValue() != null) {
+        int iquantitat20 = Integer.parseInt(quantitat20.getValue().toString());
+        int iquantitat50 = Integer.parseInt(quantitat50.getValue().toString());
+        int iquantitat100 = Integer.parseInt(quantitat100.getValue().toString());
 
-            double cantidadTotal = iquantitat20 * 20.0 + iquantitat50 * 50 + iquantitat100 * 100;
-            saldoActual = cantidadTotal;
+        double cantidadTotal = iquantitat20 * 20.0 + iquantitat50 * 50 + iquantitat100 * 100;
+        saldoActual = cantidadTotal;
 
-            double Saldo = saldoActual - cantidadTotal;
+        total.setText("Enhorabuena, has ingresado: €" + saldoActual);
 
-            total.setText("Enhoraba has ingresat: €" + saldoActual);
-            double Saldo_client = App.banc.getUsuariActual().getSaldo();
+        // Actualizar los valores de los billetes en el objeto Usuario
+        App.banc.getUsuariActual().setBitllets_20(App.banc.getUsuariActual().getBitllets_20() + iquantitat20);
+        App.banc.getUsuariActual().setBitllets_50(App.banc.getUsuariActual().getBitllets_50() + iquantitat50);
+        App.banc.getUsuariActual().setBitllets_100(App.banc.getUsuariActual().getBitllets_100() + iquantitat100);
 
-            double saldo_Final = Saldo_client + saldoActual;
-            saldo.setText(" €" + saldo_Final);
+        double saldoCliente = App.banc.getUsuariActual().getSaldo();
+        double saldoFinal = saldoCliente + saldoActual;
+        saldo.setText("€" + saldoFinal);
 
-          String nom_client = App.banc.getUsuariActual().getNom_client();
+        String nomClient = App.banc.getUsuariActual().getNom_client();
+        double saldoIngreso = saldoActual;
+        String fecha = obtenerFechaActual();
 
-double saldoingres = saldoActual; // Saldo para la extracción
-String data = obtenerFechaActual();
+        // Crear una instancia del movimiento de ingreso
+        String tipoMovimiento = "ingreso";
+        String nomBitllets = iquantitat20 + "x20€, " + iquantitat50 + "x50€, " + iquantitat100 + "x100€";
+        double numBitllets20 = App.banc.getUsuariActual().getBitllets_20();
+        double numBitllets50 = App.banc.getUsuariActual().getBitllets_50();
+        double numBitllets100 = App.banc.getUsuariActual().getBitllets_100();
 
-// Crear una instancia del movimiento de transferencia
-String tipusMov = "ingreso";
-Movimientos movimientoingreso = new Movimientos(nom_client, tipusMov, saldoingres, data);
-Movimientos.MOV.add(movimientoingreso);
+        Movimientos movimientoIngreso = new Movimientos(nomClient, tipoMovimiento, saldoIngreso, fecha, nomBitllets, numBitllets20, numBitllets50, numBitllets100);
+        Movimientos.MOV.add(movimientoIngreso);
 
-// Llamar al método guardarMovs() y verificar el resultado
- registroExitoso = Movimientos.guardarMovs();
-
-if (registroExitoso) {
-    // El registro se realizó correctamente
-    System.out.println("El registro de la transferencia se realizó correctamente");
-} else {
-    // Hubo un error en el registro
-    System.out.println("Error al realizar el registro de la transferencia");
+        // Llamar al método guardarMovs() y verificar el resultado
+        registroExitoso = Movimientos.guardarMovs();
+        if (registroExitoso) {
+            System.out.println("El registro del movimiento de ingreso fue exitoso.");
+        } else {
+            System.out.println("Error al guardar el movimiento de ingreso.");
+        }
+    }
 }
 
 
      
-
-   
-    
-    
-    
-
-
-
-    }
-     }
 
 
  /**
@@ -174,6 +170,7 @@ void initialize() {
     }
         
 }
+
 
 
  
