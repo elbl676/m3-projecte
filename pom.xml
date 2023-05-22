@@ -98,6 +98,11 @@
 				<option>${profiler.jvmargs.arg4}</option>
 				<option>${profiler.jvmargs.arg5}</option>
                             </options>
+                            <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <!-- Resto de la configuración -->
+</build>
+
                         </configuration>
                     </execution>
                 </executions>
